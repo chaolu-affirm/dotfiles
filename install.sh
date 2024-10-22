@@ -19,3 +19,4 @@
 # ~/.dotfiles/SecretDotfiles/install.sh
 
 echo using dotfile install script
+echo `whoami`>~/dotfilewrite
