@@ -1,20 +1,21 @@
 #!/bin/bash
 
-sym() {
-    dotdir="$1"
+# sym() {
+#     dotdir="$1"
 
-    for filename in $(find $dotdir -name "*.symlink"); do
-      ln -sf $filename ~/.$(basename $filename | sed "s/\.symlink//")
-    done
-}
+#     for filename in $(find $dotdir -name "*.symlink"); do
+#       ln -sf $filename ~/.$(basename $filename | sed "s/\.symlink//")
+#     done
+# }
 
-dotfs=$(cd $(dirname $0) && pwd)
+# dotfs=$(cd $(dirname $0) && pwd)
 
-sym "$dotfs"
+# sym "$dotfs"
 
-git clone git@github.com:oakeyc/SecretDotfiles.git ~/.dotfiles/SecretDotfiles
+# git clone git@github.com:oakeyc/SecretDotfiles.git ~/.dotfiles/SecretDotfiles
 
-export PATH=$PATH:~/.dotfiles/SecretDotfiles
+# export PATH=$PATH:~/.dotfiles/SecretDotfiles
 
-~/.dotfiles/SecretDotfiles/install.sh
+# ~/.dotfiles/SecretDotfiles/install.sh
 
+echo using dotfile install script
